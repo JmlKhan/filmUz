@@ -16,8 +16,6 @@ app.use(express.static('uploads'));
 //routes
 app.use('/api/v1/posts', routes);
 
-
-
 //connecting to db
 const connectDB = async () => {
   try {
@@ -33,5 +31,5 @@ const connectDB = async () => {
 };
 connectDB();
 app.listen(port, () => {
-console.log('App is running on 5000');
+  console.log('App is running on 5000');
 });
